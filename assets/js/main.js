@@ -47,4 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('lgpd_cookie_accepted', 'true');
     cookieBanner.classList.remove('show');
   });
+
+  // Google Ads Conversion Tracking (WhatsApp Clicks)
+  const whatsappLinks = document.querySelectorAll('a[href*="api.whatsapp.com"]');
+  whatsappLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16879544557/0kICCOaXhZ8aEO3R5fA-',
+            'value': 0.0,
+            'currency': 'BRL'
+        });
+      }
+    });
+  });
 });
