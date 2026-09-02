@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://clinicaodonto24hrs.com.br/sitemap.xml
