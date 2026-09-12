@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
-            'send_to': 'AW-16879544557/Vl1fCOGFoe8cEO3R5fA-',
+            'send_to': 'AW-18434743511/Y5k5CL-d6PQcENe5r9ZE',
             'value': 0.0,
             'currency': 'BRL'
         });
