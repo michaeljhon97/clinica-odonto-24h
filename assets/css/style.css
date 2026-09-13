@@ -123,9 +123,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  background-color: var(--primary-color-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 119, 182, 0.3);
+}
+
+/* WhatsApp Pulse Button */
+.btn-whatsapp-pulse {
+  background-color: #25D366;
+  color: white;
+  animation: pulse-green 2s infinite;
+}
+
+.btn-whatsapp-pulse:hover {
+  background-color: #128C7E;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4);
+}
+
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }
 
 /* Header & Top Bar */
